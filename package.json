@@ -1,0 +1,25 @@
+{
+  "name": "booze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aasalgado/booze.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aasalgado/booze/issues"
+  },
+  "homepage": "https://github.com/aasalgado/booze#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "mongoose": "4.10.8",
+    "morgan": "^1.9.0"
+  }
+}
