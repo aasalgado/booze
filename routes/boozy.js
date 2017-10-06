@@ -1,17 +1,17 @@
 const
     express = require('express'),
     boozyRouter = new express.Router()
-    boozyCtrl = require('../controller/boozy.js')
+    boozyControl = require('../controllers/boozy.js')
 ;
 
-boozyRouter.get('/', videosControl.index)
+boozyRouter.get('/', boozyControl.index)
 
-boozyRouter.post('/', videosControl.create)
+boozyRouter.post('/', boozyControl.create)
 
-boozyRouter.get('/:id', videosControl.show)
+boozyRouter.get('/:id', boozyControl.show)
 
-boozyRouter.patch('/:id', videosControl.update)
+boozyRouter.patch('/:id', boozyControl.update)
 
-boozyRouter.delete('/:id', videosControl.destroy)
+boozyRouter.delete('/:id', boozyControl.destroy)
 
 module.exports = boozyRouter
