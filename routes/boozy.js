@@ -1,7 +1,7 @@
 const
     express = require('express'),
     boozyRouter = new express.Router()
-    boozyCtrl = require('../controllers/boozy.js')
+    boozyControl = require('../controllers/boozy.js')
 ;
 
 boozyRouter.get('/', boozyControl.index)
