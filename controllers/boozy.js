@@ -23,6 +23,12 @@ module.exports = {
         })
     },
 
+    update: (req, res) => {
+        Booze.findByIdAndUpdate(req.params.id, req.body, {new:true}, function(err, updatedBooze) {
+            res.json(updatedBooze)
+        })
+    },
+
     destroy: (req, res) => {
         Booze.findByIdAndRemove(req.params.id, (err) => {
             if(err) return console.log(err)
